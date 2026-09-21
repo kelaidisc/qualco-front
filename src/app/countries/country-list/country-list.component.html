@@ -1,0 +1,8 @@
+<h2>Countries</h2>
+<ol>
+    <li *ngFor="let country of countries">
+        <a [routerLink]="['/countries', country.id, 'languages']">
+            {{ country.name }} - {{ country.area | number:'1.0-0' }} km² - {{ country.countryCode2 }}
+        </a>
+    </li>
+</ol>

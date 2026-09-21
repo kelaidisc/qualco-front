@@ -1,0 +1,22 @@
+<h2>Best GDP / Population Ratio Year per Country</h2>
+<p class="text-muted">Shows the year where each country achieved its highest GDP per capita ratio.</p>
+<table class="table table-striped table-hover mt-3">
+    <thead class="table-dark">
+    <tr>
+        <th>Country</th>
+        <th>Code</th>
+        <th>Year</th>
+        <th>Population</th>
+        <th>GDP</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let row of stats">
+        <td>{{ row.name }}</td>
+        <td>{{ row.countryCode3 }}</td>
+        <td>{{ row.year }}</td>
+        <td>{{ row.population | number }}</td>
+        <td>{{ row.gdp | number }}</td>
+    </tr>
+    </tbody>
+</table>

@@ -1,0 +1,6 @@
+<a routerLink="/countries" class="btn btn-outline-secondary btn-sm mb-3">← Back to Countries</a>
+<h2>Spoken Languages</h2>
+<ul class="list-group mt-2">
+    <li *ngFor="let lang of languages" class="list-group-item">{{ lang }}</li>
+</ul>
+<p *ngIf="languages.length === 0" class="text-muted mt-3">No languages found for this country.</p>
